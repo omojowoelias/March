@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo su
+yum update -y
+yum install http -y
+systemctl restart httpd
+systemctl enable httpd
+echo "We created a static website on Linux distro that is managed by redhat" /var/www/html/index.html
